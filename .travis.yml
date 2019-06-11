@@ -3,3 +3,4 @@ jdk:
   - jstl
   - servlet-api
   - mysql-connector
+  install: ant
