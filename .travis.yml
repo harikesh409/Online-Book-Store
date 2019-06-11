@@ -1,1 +1,5 @@
 language: java
+jdk:
+  - jstl
+  - servlet-api
+  - mysql-connector
