@@ -1,6 +1,6 @@
 language: java
 jdk:
-  - jstl
-  - servlet-api
-  - mysql-connector
-  install: ant
+  - oraclejdk8
+  - oraclejdk9
+  - openjdk8
+install: ant
