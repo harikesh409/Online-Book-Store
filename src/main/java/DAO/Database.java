@@ -7,7 +7,7 @@ public class Database {
 	private final static String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 	private final static String DB_URL = "jdbc:mysql://localhost/books";
 	private static final String USER = "root";
-	private static final String PASS = "";
+	private static final String PASS = "root";
 
 	private static Connection conn = null;
 

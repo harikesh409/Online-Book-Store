@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+      MYSQL_DATABASE: books
+    volumes:
+      - mysql-database-data-volume:/var/lib/mysql
+    networks:
+      - online-book-store-web-application-network
+
+# Volumes
+volumes:
+  mysql-database-data-volume:
+
+networks:
+  online-book-store-web-application-network:
