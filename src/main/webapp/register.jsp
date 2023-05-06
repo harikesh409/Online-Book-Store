@@ -79,7 +79,7 @@
 		return;
 	}
 %>
-<jsp:useBean class="beans.UserBean" scope="request" id="userBean"></jsp:useBean>
+<jsp:useBean class="com.example.beans.UserBean" scope="request" id="userBean"></jsp:useBean>
 <jsp:setProperty property="*" name="userBean" />
 <%
 	if (userBean.register()) {

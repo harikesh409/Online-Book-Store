@@ -1,11 +1,11 @@
-package DAO;
+package com.example.dao;
 
 import java.sql.*;
 
 public class Database {
 
-	private final static String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-	private final static String DB_URL = "jdbc:mysql://localhost/books";
+	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+	private static final String DB_URL = "jdbc:mysql://localhost/books";
 	private static final String USER = "root";
 	private static final String PASS = "root";
 
@@ -19,7 +19,7 @@ public class Database {
 			return conn;
 		} catch (Exception ex) {
 			ex.printStackTrace();
-			return null;
+			throw new RuntimeException();
 		}
 	}
 

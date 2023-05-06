@@ -1,6 +1,6 @@
-package beans;
+package com.example.beans;
 
-import DAO.CartDAO;
+import com.example.dao.CartDAO;
 import java.util.List;
 
 public class CartBean {

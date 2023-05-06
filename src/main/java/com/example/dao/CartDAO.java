@@ -1,6 +1,6 @@
-package DAO;
+package com.example.dao;
 
-import beans.CartBean;
+import com.example.beans.CartBean;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,8 +9,6 @@ import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Iterator;
 import java.util.List;
-
-import DAO.Database;
 
 public class CartDAO {
 

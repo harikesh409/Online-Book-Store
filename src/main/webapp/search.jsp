@@ -37,7 +37,7 @@
 			</div>
 		</form>
 		<book:if test="${!empty param.query}">
-			<jsp:useBean class="beans.BookBean" scope="page" id="bookBean"></jsp:useBean>
+			<jsp:useBean class="com.example.beans.BookBean" scope="page" id="bookBean"></jsp:useBean>
 			<jsp:setProperty property="title" name="bookBean" param="query" />
 			<div id="books" class="row view-group">
 				<book:set var="books" value="${bookBean.searchResults}"></book:set>

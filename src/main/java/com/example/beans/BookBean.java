@@ -1,8 +1,8 @@
-package beans;
+package com.example.beans;
 
 import java.util.List;
 
-import DAO.BookDAO;
+import com.example.dao.BookDAO;
 
 public class BookBean {
 	private String isbn;

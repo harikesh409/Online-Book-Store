@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:useBean class="beans.CartBean" scope="page" id="cartBean"></jsp:useBean>
+	<jsp:useBean class="com.example.beans.CartBean" scope="page" id="cartBean"></jsp:useBean>
 	<jsp:setProperty property="isbn" name="cartBean"
 		value='<%=request.getParameter("isbn")%>' />
 	<jsp:setProperty property="quantity" name="cartBean"

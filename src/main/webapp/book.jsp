@@ -25,7 +25,7 @@
 	<%
 		if (request.getParameter("isbn") != null) {
 	%>
-	<jsp:useBean class="beans.BookBean" scope="page" id="bookBean"></jsp:useBean>
+	<jsp:useBean class="com.example.beans.BookBean" scope="page" id="bookBean"></jsp:useBean>
 	<jsp:setProperty property="isbn" name="bookBean" />
 	<book:set var="book" value="${bookBean.book}"></book:set>
 	<div class="container mt-3 mb-3">

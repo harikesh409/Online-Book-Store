@@ -1,6 +1,6 @@
-package beans;
+package com.example.beans;
 
-import DAO.UserDAO;
+import com.example.dao.UserDAO;
 
 public class UserBean {
 	private String email, password, name, address, city, country, gender, newPassword, date;

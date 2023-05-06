@@ -1,4 +1,4 @@
-package DAO;
+package com.example.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
 
-import beans.BookBean;
+import com.example.beans.BookBean;
 
 public class BookDAO {
 

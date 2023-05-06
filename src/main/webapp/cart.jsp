@@ -12,7 +12,7 @@
 </head>
 <body>
 	<jsp:include page="header2.jsp"></jsp:include>
-	<jsp:useBean class="beans.CartBean" scope="session" id="cartBean"></jsp:useBean>
+	<jsp:useBean class="com.example.beans.CartBean" scope="session" id="cartBean"></jsp:useBean>
 	<div class="container mt-3 mb-3">
 		<h3>Cart</h3>
 		<hr />

@@ -25,7 +25,7 @@
 	<%
 		if (request.getParameter("cat") != null) {
 	%>
-	<jsp:useBean class="beans.BookBean" scope="page" id="bookBean"></jsp:useBean>
+	<jsp:useBean class="com.example.beans.BookBean" scope="page" id="bookBean"></jsp:useBean>
 	<jsp:setProperty property="category" name="bookBean" param="cat" />
 	<%
 		}

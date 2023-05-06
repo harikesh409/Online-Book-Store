@@ -1,4 +1,4 @@
-<%@page import="DAO.Database"%>
+<%@page import="com.example.dao.Database"%>
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -29,7 +29,7 @@
 	<div class="container mt-2">
 		<h3>All Book</h3>
 		<hr />
-		<jsp:useBean class="beans.BookBean" scope="page" id="bookBean"></jsp:useBean>
+		<jsp:useBean class="com.example.beans.BookBean" scope="page" id="bookBean"></jsp:useBean>
 		<div id="books" class="row view-group">
 			<book:forEach var="book" items="${bookBean.allBooks}">
 				<div class="item col-lg-4 col-4">

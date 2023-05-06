@@ -37,7 +37,7 @@
 	if (request.getParameter("email") == null || request.getParameter("password") == null)
 		return;
 %>
-<jsp:useBean class="beans.UserBean" scope="session" id="userBean" />
+<jsp:useBean class="com.example.beans.UserBean" scope="session" id="userBean" />
 <jsp:setProperty name="userBean" property="*" />
 
 <%
