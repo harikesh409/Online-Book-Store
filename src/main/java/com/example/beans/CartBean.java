@@ -2,15 +2,19 @@ package com.example.beans;
 
 import com.example.dao.CartDAO;
 import java.util.List;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@NoArgsConstructor
+@Getter
+@Setter
 public class CartBean {
-	private String isbn, title, cover;
+	private String isbn;
+	private String title;
+	private String cover;
 	int quantity;
 	float price;
-
-	public CartBean() {
-
-	}
 
 	public CartBean(String isbn, String title, float price, int quantity, String cover) {
 		this.isbn = isbn;
@@ -32,46 +36,6 @@ public class CartBean {
 	
 	public void removeItem(String isbn) {
 		CartDAO.removeItem(isbn);
-	}
-
-	public String getIsbn() {
-		return isbn;
-	}
-
-	public void setIsbn(String isbn) {
-		this.isbn = isbn;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public float getPrice() {
-		return price;
-	}
-
-	public void setPrice(float price) {
-		this.price = price;
-	}
-
-	public int getQuantity() {
-		return quantity;
-	}
-
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
-
-	public String getCover() {
-		return cover;
-	}
-
-	public void setCover(String cover) {
-		this.cover = cover;
 	}
 
 	public void addQuantity(int quantity) {
